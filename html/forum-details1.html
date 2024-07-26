@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/forum.css">
+    <link rel="stylesheet" href="../css/posts.css">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <div class="forum-header">
+            <nav class="nav">
+                <a href="../index.html" class="logo">
+                    <img src="../pic/WhiteLogo.gif">
+                </a>
+                <ul class="nav-menu">
+                    <li class="menu-item">
+                        <a href="forum.html" class="active">Forum</a>
+                        <div class="dropdown">
+                            <a href="css3-forum.html">CSS3</a>
+                            <a href="#">JAVASCRIPT</a>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <a href="resources.html">Resources</a>
+                        <div class="dropdown">
+                            <a href="couses-resources.html">Couses</a>
+                            <a href="books-resources.html">Books</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="user">
+                <li><a href="you.html">YOU</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- 帖子列表 -->
+    <div class="header-bg">
+        <img src="../pic/forums-css.png" alt="">
+        <div class="title">
+            CSS3 FORUM
+        </div>
+    </div>
+
+    <!-- 帖子内容页 -->
+    <div class="forum-container">
+        <div class="forum-row">
+            <div class="sidebar">
+                <div class="category">
+                    <pic><img src="../pic/elonmusk.jpg" alt="">
+                        <span>elon musk</span>
+                </div>
+            </div>
+            <div class="main-content">
+                Exploring the depths of CSS gradients is akin to exploring space – endless possibilities and layers
+                waiting to be discovered. The way gradients can seamlessly blend colors mirrors how innovation blends
+                various technologies to push the boundaries of what's possible. It's not just about the visual appeal;
+                it's about how these subtle transitions can create a user experience that feels intuitive and
+                futuristic. Just like launching a rocket or unveiling a new electric vehicle, employing CSS gradients in
+                design projects propels the user interface into a new era. Keep pushing the envelope.
+            </div>
+        </div>
+
+        <div class="forum-row">
+            <div class="sidebar">
+                <div class="category">
+                    <pic><img src="../pic/mahuateng.jpg" alt="">
+                        <span>huateng ma</span>
+                </div>
+            </div>
+            <div class="main-content">
+                In the digital realm, where first impressions are crucial, CSS gradients offer an elegant solution for
+                creating captivating visuals. They provide a canvas for storytelling, allowing colors to merge and flow
+                like the harmony of technologies in the Tencent ecosystem. From gaming to social platforms, gradients
+                can add depth, emotion, and engagement. It's a testament to how nuanced details can elevate the user
+                experience, reflecting our commitment to innovation and excellence.
+            </div>
+        </div>
+
+        <div class="forum-row">
+            <div class="sidebar">
+                <div class="category">
+                    <pic><img src="../pic/timcook.jpg" alt="">
+                        <span>tim cook</span>
+                </div>
+            </div>
+            <div class="main-content">
+                At Apple, we're dedicated to creating products and experiences that enrich people's lives. CSS gradients
+                represent the kind of subtle elegance and attention to detail that we strive for in every Apple product.
+                They allow for a spectrum of creativity, enhancing interfaces in ways that are both aesthetically
+                pleasing and intuitively aligned with our design ethos. Like the precise engineering behind every iPhone
+                or MacBook, CSS gradients offer a tool for designers to craft visually stunning and expressive
+                interfaces that resonate with users on a deeper level. They embody our belief that technology should
+                empower and inspire.
+            </div>
+        </div>
+        <div class="forum-row">
+            <div class="sidebar">
+                <div class="category">
+                    <pic><img src="../pic/github-mark.png" alt="">
+                        <span>you</span>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="new-thread">
+                    <h2>Post a new topic</h2>
+                    <form>
+                        <label for="title">Title</label>
+                        <input type="text" id="title" name="title"><br>
+
+                        <label for="content">Content</label>
+                        <textarea id="content" name="content"></textarea><br>
+
+                        <input type="submit" value="POST">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 发帖页面 -->
+
+
+    <script type="text/javascript">
+        // 发帖表单提交
+        const newThreadForm = document.querySelector('.new-thread form');
+        newThreadForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const title = document.getElementById('title').value;
+            const content = document.getElementById('content').value;
+            // 在这里处理提交表单的逻辑，例如发送到服务器
+            console.log('新主题:', title, content);
+        });
+    </script>
+    <script type="text/javascript" src="../scripts/header.js"></script>
+</body>
+
+</html>

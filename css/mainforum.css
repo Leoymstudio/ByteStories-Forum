@@ -1,0 +1,30 @@
+.page-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* 这将在图片之间添加间距 */
+}
+
+.page-bg {
+    width: calc(50% - 15px);
+    max-width: 100%;
+    margin-bottom: 1px;
+    position: relative;
+}
+
+.page-bg img {
+    width: 100%;
+    object-fit: cover;
+    border: 5px solid white;
+}
+
+.page-bg p {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color:white;
+    text-align: center;
+    font-family: "Lucida Calligraphy";
+    font-weight: 600;
+    font-size: 20px;
+}

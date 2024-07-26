@@ -1,0 +1,165 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+/* 初始页面容器 */
+.page {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../pic/background.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+/* menu */
+.menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    background: none;
+    border: none;
+}
+
+/* 打开左上角的logo */
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    background-image: url('../pic/WhiteLogo.gif');
+    background-size: contain;
+    width: 240px;
+    height: 135px;
+}
+
+/* 中间文字 */
+.title {
+    font-size: 6em;
+    font-weight: bold;
+    /* animation: glitch 1.5s infinite; */
+}
+
+/* 按钮文字 */
+.sign-up {
+    color: rgb(48, 48, 48);
+    margin-top: 30px;
+    padding: 10px 40px;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.sign-up:hover {
+    background: #ccc;
+}
+
+/* 下滑 */
+.down {
+    position: absolute;
+    bottom: 30px;
+    background-image: url('../pic/github-mark-white.png');
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+}
+
+/* 关键帧动画 */
+@keyframes glitch {
+    0% {
+        text-shadow: 2px 2px #fff, -2px -2px #000;
+    }
+
+    25% {
+        text-shadow: -2px -2px #fff, 2px 2px #000;
+    }
+
+    50% {
+        text-shadow: 2px -2px #fff, -2px 2px #000;
+    }
+
+    75% {
+        text-shadow: -2px 2px #fff, 2px -2px #000;
+    }
+
+    100% {
+        text-shadow: 2px 2px #fff, -2px -2px #000;
+    }
+}
+
+/* 弹出框 */
+.float-page {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.close-float {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    background: none;
+    border: none;
+}
+.float-item{
+    display: block;
+    /* 让每个链接占一行 */
+    font-size: 50px;
+    /* 设置字体大小 */
+    text-decoration: none;
+    /* 去掉下划线 */
+    color: #fff;
+    /* 设置链接颜色 */
+    margin-bottom: 10px;
+    /* 为每个链接添加一些底部边距 */
+    transition: color 0.3s ease;
+    /* 添加过渡效果 */
+}
+.float-items{
+    display: block;
+    /* 让每个链接占一行 */
+    font-size: 25px;
+    /* 设置字体大小 */
+    text-decoration: none;
+    /* 去掉下划线 */
+    color: #fff;
+    /* 设置链接颜色 */
+    margin-bottom: 10px;
+    /* 为每个链接添加一些底部边距 */
+    transition: color 0.3s ease;
+    /* 添加过渡效果 */
+}

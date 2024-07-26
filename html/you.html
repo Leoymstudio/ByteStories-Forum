@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You</title>
+    <link rel="stylesheet" href="../css/forum.css">
+    <link rel="stylesheet" href="../css/mainforum.css">
+    <link rel="stylesheet" href="../css/fudong.css">
+    <link rel="stylesheet" href="../css/you.css">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <div class="forum-header">
+            <nav class="nav">
+                <a href="../index.html" class="logo">
+                    <img src="../pic/WhiteLogo.gif">
+                </a>
+                <ul class="nav-menu">
+                    <li class="menu-item">
+                        <a href="forum.html">Forum</a>
+                        <div class="dropdown">
+                            <a href="css3-forum.html">CSS3</a>
+                            <a href="#">JAVASCRIPT</a>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <a href="resources.html">Resources</a>
+                        <div class="dropdown">
+                            <a href="couses-resources.html">Couses</a>
+                            <a href="books-resources.html">Books</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="user">
+                <li><a href="you.html">YOU</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- 帖子列表 -->
+    <div class="header-bg">
+        <img src="../pic/backgroundBLACK.png" alt="">
+    </div>
+
+    <div class="page-container">
+        <div class="page-bg">
+            <a href="books-resources.html"><img src="../pic/books.png"></a>
+        </div>
+        <div class="page-bg">
+            <a href="#">
+                <p>All problems in computer science can be solved by another level of indirection</p>
+            </a>
+        </div>
+        <div class="page-bg">
+            <a href="couses-resources.html"><img src="../pic/courses.png"></a>
+        </div>
+        <div class="page-bg">
+            <a href="#">
+                <p>There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors.</p>
+            </a>
+        </div>
+    </div>
+    <div class="full-img" id="background1"></div>
+    <div class="content-light" id="content1">
+        <div id="navigator">
+            <ul class="nav-list">
+                <li>
+                    <span class="tips" onclick="openFloatPage1()">Points Rules</span>
+                </li>
+                <li>
+
+                    <span class="tips" onclick="openFloatPage2()">Task Rules</span>
+                </li>
+                <li>
+                    
+                    <span class="tips"><a href="forum.html" style="text-decoration: none;color: black">Forum</a></span>
+                </li>
+                <li>
+                    
+                    <span class="tips"><a href="resources.html" style="text-decoration: none;color: black">Resources</a></span>
+                </li>
+                <li>
+                    <span class="tips" onclick="openFloatPage3()">Contact Us</span>
+                </li>
+
+            </ul>
+        </div>
+        <div class="arrow" id="arrow">
+            <a href="../index.html">
+                <img src="../pic/WhiteLogo.gif">
+            </a>
+        </div>
+    </div>
+
+    <div class="float-page" id="floatPage1">
+        <div class="close-float" onclick="closeFloatPage1()">X</div>
+        <h1>Points Rules</h1>
+        <p>Here's a draft of the Forum Points Rules in English:</p>
+        <p>1. New Registration: 10 points</p>
+        <p>2. Post a New Topic: 5 points</p>
+        <p>3. Reply to a Topic: 2 points</p>
+        <p>4. Upload a Resource: 10 points</p>
+        <p>5. Vote on a Topic: 1 point</p>
+        <p>6. Comment on a Post: 1 point</p>
+        <p>7. Report a Topic: 1 point</p>
+        <p>8. Edit a Post: 1 point</p>
+        <p>Your point now is: <u>100 point</u></p>
+    </div>
+    <div class="float-page" id="floatPage2">
+        <div class="close-float" onclick="closeFloatPage2()">X</div>
+        <h1>Points Rules</h1>
+        <p>Here's a draft of the Forum Points Rules in English:</p>
+        <p>1. New Registration: 10 points</p>
+        <p>2. Post a New Topic: 5 points</p>
+        <p>3. Reply to a Topic: 2 points</p>
+        <p>4. Upload a Resource: 10 points</p>
+        <p>5. Vote on a Topic: 1 point</p>
+        <p>6. Comment on a Post: 1 point</p>
+        <p>7. Report a Topic: 1 point</p>
+        <p>8. Edit a Post: 1 point</p>
+        <p>Your point now is: <u>100 point</u></p>
+    </div>
+    <div class="float-page" id="floatPage3">
+        <div class="close-float" onclick="closeFloatPage3()">X</div>
+        <h1>Contact US:&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+        <p>1784237811@qq.com</p>
+    </div>
+
+    <script type="text/javascript" src="../scripts/gif.js"></script>
+    <script type="text/javascript" src="../scripts/header.js"></script>
+
+    <script type="text/javascript">
+
+        function openFloatPage1() {
+            document.getElementById('floatPage1').style.display = 'flex';
+        }
+    
+        function closeFloatPage1() {
+            document.getElementById('floatPage1').style.display = 'none';
+        }
+        function openFloatPage2() {
+            document.getElementById('floatPage2').style.display = 'flex';
+        }
+    
+        function closeFloatPage2() {
+            document.getElementById('floatPage2').style.display = 'none';
+        }
+        function openFloatPage3() {
+            document.getElementById('floatPage3').style.display = 'flex';
+        }
+    
+        function closeFloatPage3() {
+            document.getElementById('floatPage3').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>

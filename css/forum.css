@@ -1,0 +1,215 @@
+/* 通用样式 */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+header {
+  height: 75px;
+  background: #31393c;
+}
+
+/* 导航栏 */
+.forum-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: rgb(0, 0, 0, 0.4);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.nav .logo img {
+  height: 50px;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav-menu li {
+  margin-right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 110px;
+}
+
+.nav-menu li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.nav-menu li a.active {
+  color: #f90;
+}
+
+.user {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+}
+
+.user li {
+  margin-left: 20px;
+}
+
+.user li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: #444;
+  padding: 10px;
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+.dropdown a {
+  display: block;
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.dropdown a:hover {
+  background: #555;
+}
+
+/* 标题栏 */
+.header-bg {
+  margin-bottom: 25px;
+  position: relative;
+  height: 300px;
+}
+
+.header-bg img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.header-bg .title {
+  width: 100vw;
+  position: absolute;
+  bottom: -15px;
+  max-width: 100%;
+  padding: 15px 0;
+  border-radius: 10px;
+  text-align: center;
+  color: #F7E5C3;
+  font-weight: 600;
+  font-size: 18px;
+  background: #31393c;
+}
+
+/* 帖子列表 */
+.contentBlog {
+  width: 100vw;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.contentBlog .pic {
+  height: 200px;
+}
+
+.contentBlog .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 4px;
+}
+
+.contentBlog .card-body p {
+  text-decoration: none;
+  /* 去掉下划线 */
+  color: #ffffff;
+  /* 设置超链接的文本颜色 */
+}
+
+.box {
+  padding: 15px;
+  color: #2a2a2964;
+  background: #31393c;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+}
+
+.card-title {
+  margin-bottom: .75rem;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.card-text {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.card-text:last-child {
+  margin-bottom: 0;
+  text-decoration: none;
+}
+
+.col-4 {
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+.col-8 {
+  -ms-flex: 0 0 66.666667%;
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+}
+

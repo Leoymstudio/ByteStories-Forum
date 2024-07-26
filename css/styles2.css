@@ -1,0 +1,175 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+/* 打开左上角的logo */
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    background-image: url('../pic/WhiteLogo.gif');
+    background-size: contain;
+    width: 240px;
+    height: 135px;
+}
+.content {
+    width: 100vw;
+    height: 100vh;
+    background:url("../pic/backgroundsign.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+/*底板*/
+.content .login-wrapper {
+    width: 70vw;
+    height: 90vh;
+    background-color: rgba(255, 255, 255, 0.2); /* 设置背景色为磨砂透明，透明度为0.8 */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.48);
+}
+
+/*登陆页面左侧的图片*/
+.content .login-wrapper .left-img {
+    border-radius: 15px;
+    flex: 1;
+    background: url(../pic/signleft.png) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/*登陆界面*/
+.content .login-wrapper .right-login-form {
+    flex: 1;
+    position: relative;
+}
+
+/*登陆主体部分*/
+.content .login-wrapper .right-login-form .form-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Log in上文字*/
+.content .login-wrapper .right-login-form .form-wrapper h1 {
+    font-size: 40px;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.content .login-wrapper .right-login-form .form-wrapper h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+/*登陆输入部分*/
+.content .login-wrapper .right-login-form .form-wrapper .input-items {
+    margin: 15px 0;
+}
+
+.content .login-wrapper .right-login-form .form-wrapper .input-items2 {
+    margin: 15px 0;
+}
+
+/*输入提示语*/
+.content .login-wrapper .right-login-form .form-wrapper .input-items .input-tips {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 8px 0;
+}
+
+/*输入框*/
+.content .login-wrapper .right-login-form .form-wrapper .input-items .inputs {
+    width: 100%;
+    /*height: 50px;*/
+    border-radius: 10px;
+    border: 1px solid rgb(227, 227, 227);
+    padding: 20px;
+    box-sizing: border-box;
+    outline: none;
+    transition: 0.5s;
+}
+
+
+/*获得焦点时，即对输入框按下时*/
+.content .login-wrapper .right-login-form .form-wrapper .input-items .inputs:focus {
+    border: 1px solid #000;
+}
+
+/* 忘记密码 */
+/* .content .login-wrapper .right-login-form .form-wrapper .input-items .forgot {
+    float: right;
+    font-weight: 600;
+    text-align: right;
+    margin: 5px 0;
+    font-size: 13px;
+    cursor: pointer;
+} */
+
+/*登陆*/
+.content .login-wrapper .right-login-form .form-wrapper .btn {
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+    border: 0;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 25px;
+    margin: 15px 0;
+    cursor: pointer;
+    font-weight: bold;
+}
+.content .login-wrapper .right-login-form .form-wrapper .btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+/*提示注册*/
+.content .login-wrapper .right-login-form .form-wrapper .signup-tips {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    text-decoration: none
+}
+
+/*注册*/
+.content .login-wrapper .right-login-form .form-wrapper .signup-tips a {
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+@media (max-width: 1024px) {
+    .login-wrapper {
+        padding: 20px;
+    }
+
+    .login-wrapper .left-img {
+        display: none;
+    }
+
+    .login-wrapper .right-login-form {
+        padding: 20px;
+    }
+}
+
+/*# sourceMappingURL=style2.css.map */

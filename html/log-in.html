@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN IN Byte Stories</title>
+    <link rel="stylesheet" href="../css/styles2.css">
+</head>
+
+<body>
+    <div class="content">
+        <a class="logo" href="../index.html"></a>
+        <div class="login-wrapper">
+            <div class="left-img">
+            </div>
+            <div class="right-login-form">
+                <div class="form-wrapper">
+                    <h1>LOG IN BYTE STORIES</h1>
+                    <form>
+                        <div class="input-items">
+                            <span class="input-tips">
+                                USERNAME
+                            </span>
+                            <br>
+                            <input type="text" class="inputs" id="username" placeholder="Enter your username">
+                        </div>
+                        <div class="input-items">
+                            <span class="input-tips">
+                                PASSWORD
+                            </span>
+                            <br>
+                            <input type="password" class="inputs" id="password" placeholder="Enter your password">
+                        </div>
+                        <input type="button" class="btn" value="LOG IN" onclick="login()">
+                    </form>
+                    <script>
+                        function login() {
+                            var username = document.getElementById('username').value;
+                            var password = document.getElementById('password').value;
+                    
+                            // 验证用户名和密码
+                            if (username === '123' && password === '123') {
+                                alert('登录成功！');
+                                window.location.href = 'you.html'; // 跳转到指定页面
+                            } else {
+                                alert('用户名或密码错误！');
+                            }
+                        }
+                    </script>
+                    <!--注册-->
+                    <div class="signup-tips">
+                        <span>NO ACCOUNT?</span>
+                        <a href="sign-up.html"><span>SIGN UP</span></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Byte Stories - Coder's Forum</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div id="page1" class="page">
+        <div class="logo"></div>
+        <div class="title">BYTE STORIES</div>
+        <button class="sign-up" onclick="window.location.href='html/log-in.html'">
+            SIGN UP
+        </button>
+        <a class="down" href="https://github.com/Leoymstudio"><a>
+        <button class="menu" onclick="openFloatPage()">≡ MENU</button>
+
+
+        <div class="float-page" id="floatPage">
+            <div class="close-float" onclick="closeFloatPage()">+ MENU</div>
+            <a class="float-item" href="html/forum.html">FORUMS&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a class="float-items" href="html/css3-forum.html">CSS&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a class="float-items" href="html/css3-forum.html">JAVASCRIPT&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a class="float-item" href="html/resources.html">RESOURCES&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a class="float-items" href="html/couses-resources.html">COURSES&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a class="float-items" href="html/books-resources.html">BOOKS&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        </div>
+    </div>
+
+</body>
+<script type="text/javascript">
+
+    function openFloatPage() {
+        document.getElementById('floatPage').style.display = 'flex';
+    }
+
+    function closeFloatPage() {
+        document.getElementById('floatPage').style.display = 'none';
+    }
+</script>
+
+</html>

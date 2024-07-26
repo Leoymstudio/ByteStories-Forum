@@ -1,0 +1,66 @@
+.forum-container {
+    display: flex;
+    flex-direction: column;
+    /* 设置flex项目在垂直方向上排列 */
+    width: 80%;
+    background-color: rgb(255, 255, 255, 0.4);
+    margin: auto;
+    /* 让容器在水平方向上居中 */
+}
+
+.forum-row {
+    display: flex;
+    /* 对于每一行设置flex布局 */
+    justify-content: center;
+    /* 居中显示 */
+    flex-wrap: wrap;
+    /* 允许内容超出时换行 */
+    width: 100%;
+    /* 占满forum-container的宽度 */
+}
+
+.sidebar {
+    width: 20%;
+    /* 根据实际需求可以调整 */
+    background-color: #f5f5f5;
+    padding: 20px;
+    border: 5px solid rgb(255, 255, 255);
+}
+
+.sidebar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* 使图片圆形显示 */
+    overflow: hidden; /* 隐藏溢出的图片部分 */
+    position: relative;
+    object-fit: cover;
+}
+
+.sidebar span {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    color: #000;
+    font-size: medium;
+}
+
+.main-content {
+    flex: 1;
+    /* main-content会填充剩余空间 */
+    padding: 20px;
+}
+
+
+
+
+/* 发帖页面样式 */
+.new-thread form {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.new-thread input,
+.new-thread textarea {
+    margin-bottom: 10px;
+    padding: 5px;
+}
